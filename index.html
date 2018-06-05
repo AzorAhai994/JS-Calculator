@@ -31,12 +31,15 @@
         } else if (operator == "/") {
             rezultat = Number(x) / Number(y);
         }
-        valueChange(parseFloat(rezultat.toFixed(16)));
+        valueChange (+rezultat.toFixed(16));
     }
 
     function valueChange(rezultat) {
         document.getElementById("result").innerHTML = rezultat;
         if (rezultat > 9999999999999999) {
+            document.getElementById("result").innerHTML = 'ERR';
+        }
+        else if (rezultat<0.0000000000000001) {
             document.getElementById("result").innerHTML = 'ERR';
         }
         else {
