@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css" />
+</head>
+
+<body>
+    <div class="screen">
+        <p id="result"></p>
+        <a class="button" onclick="calculator()">CALCULATE</a>
+    </div>
+    <script>
+    calculator();
+
+    function calculator() {
+        var x, y, operator, rezultat;
+        x = prompt("UNESITE PRVI BROJ: ");
+        operator = prompt("UNESITE OPERATOR (+,-,*,/): ");
+        y = prompt("UNESITE DRUGI BROJ: ");
+        if (operator == "+") {
+            rezultat = Number(x) + Number(y);
+        } else if (operator == "-") {
+            rezultat = Number(x) - Number(y);
+        } else if (operator == "*") {
+            rezultat = Number(x) * Number(y);
+        } else if (operator == "/") {
+            rezultat = Number(x) / Number(y);
+        }
+        valueChange(rezultat);
+    }
+
+    function valueChange(rezultat) {
+        document.getElementById("result").innerHTML = rezultat;
+    }
+    </script>
+</body>
+
+</html>
