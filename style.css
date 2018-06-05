@@ -130,5 +130,7 @@ and (min-device-width : 320px)
 and (max-device-width : 1024px) {
     .screen {
         width: 100%;
+        overflow: hidden;
     }
 }
+
