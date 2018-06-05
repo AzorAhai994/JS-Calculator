@@ -1,4 +1,5 @@
 .screen {
+    font-family: 'Segment7Standard';
     line-height: 95px;
     position: relative;
     width: 50%;
@@ -9,7 +10,6 @@
 }
 
 p {
-    font-family: 'Segment7Standard';
     font-size: 72px;
     padding-right: 14px;
     text-align: right;
@@ -17,8 +17,6 @@ p {
 }
 
 .button {
-    font-family: 'Segment7Standard';
-    font-family: 'Segment7Standard';
     font-size: 16px;
     line-height: 3;
     position: absolute;
@@ -123,5 +121,14 @@ p {
     to {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
+    }
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 768px) {
+    .screen {
+        width: 100%;
     }
 }
