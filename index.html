@@ -30,12 +30,13 @@
         } else if (operator == "/") {
             rezultat = Number(x) / Number(y);
         }
-        valueChange(rezultat);
+        valueChange(rezultat.toFixed(16));
     }
 
     function valueChange(rezultat) {
         document.getElementById("result").innerHTML = rezultat;
     }
+
     </script>
 </body>
 
