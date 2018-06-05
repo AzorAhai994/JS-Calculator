@@ -18,6 +18,7 @@
 
     function calculator() {
         var x, y, operator, rezultat;
+        var max = 9999999999999999;
         x = prompt("UNESITE PRVI BROJ: ");
         operator = prompt("UNESITE OPERATOR (+,-,*,/): ");
         y = prompt("UNESITE DRUGI BROJ: ");
@@ -35,7 +36,15 @@
 
     function valueChange(rezultat) {
         document.getElementById("result").innerHTML = rezultat;
+        if (rezultat > 9999999999999999) {
+            document.getElementById("result").innerHTML = 'ERR';
+        }
+        else {
+            document.getElementById("result").innerHTML = rezultat;
+        }
     }
+
+
 
     </script>
 </body>
