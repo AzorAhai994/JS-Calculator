@@ -15,7 +15,7 @@
         <a id="bttn" class="button pulse infinite" onclick="calculator()">CALCULATE</a>
     </div>
     <script>
-    calculator();
+    calculator(); //function is called
 
     function calculator() {
         var x, y, operator, rezultat;
@@ -23,6 +23,7 @@
         x = prompt("UNESITE PRVI BROJ: ");
         operator = prompt("UNESITE OPERATOR (+,-,*,/): ");
         y = prompt("UNESITE DRUGI BROJ: ");
+
         if (operator == "+") {
             rezultat = Number(x) + Number(y);
         } else if (operator == "-") {
@@ -32,19 +33,21 @@
         } else if (operator == "/") {
             rezultat = Number(x) / Number(y);
         }
-        valueChange(+rezultat.toFixed(16));
+
+        valueChange(+rezultat.toPrecision(10));
     }
 
     function valueChange(rezultat) {
         document.getElementById("result").innerHTML = rezultat;
-
+/*
         if (rezultat > 9999999999999999) {
             document.getElementById("result").innerHTML = 'ERR';
         } else if (rezultat < 0.0000000000000001) {
             document.getElementById("result").innerHTML = 'ERR';
         } else {
             document.getElementById("result").innerHTML = rezultat;
-        }
+        }  */ //ERR
+       
     }
     </script>
 </body>
