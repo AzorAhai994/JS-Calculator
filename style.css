@@ -35,7 +35,7 @@ p {
     color: #fff;
     background-color: #526252;
 }
-
+/*** animation ***/
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -130,7 +130,7 @@ and (min-device-width : 320px)
 and (max-device-width : 1024px) {
     .screen {
         width: 100%;
-        overflow: hidden;
+        
     }
 }
 
