@@ -35,7 +35,10 @@ p {
     color: #fff;
     background-color: #526252;
 }
+
+
 /*** animation ***/
+
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -125,12 +128,8 @@ p {
 }
 
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 1024px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
     .screen {
         width: 100%;
-        
     }
 }
-
